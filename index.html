@@ -18,7 +18,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- Bootstrap css link -->
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
 
 </head>
 
@@ -95,9 +100,6 @@
     </header>
 
 
-
-
-
     <main>
         <article>
 
@@ -119,10 +121,26 @@
                             Similarly, In Making Cultivation Business
                         </p>
 
+                        <!-- 
+                            ------BUTTON-WITH-POPUP-------- 
+                        -->
 
-                        <button class="btn">Schedule call <ion-icon name="chevron-forward-outline"
-                                aria-hidden="true"></ion-icon></button>
+                        <button id="open-popup" class="btn show-modal">Schedule call <ion-icon name="chevron-forward-outline"
+                                aria-hidden="true"></ion-icon>
+                        </button>
 
+                        <div class="popup" id="popup">
+                            <div class="overlayy"></div>
+                            <div class="popup_content">
+                                <h2>This is Popup</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae eaque.</p>
+
+                                <div class="controls">
+                                    <button class="close-btn">Close</button>
+                                    <!-- <button class="submit-btn">Submit</button> -->
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -136,8 +154,6 @@
 
 
 
-
-
             <!-- 
             - #ABOUT
           -->
@@ -146,8 +162,8 @@
                 <div class="container">
 
                     <figure class="about-banner">
-                        <img src="./assets/images/img_4.jpg" width="700" height="560" loading="lazy"
-                            alt="about banner" class="w-100 banner-animation">
+                        <img src="./assets/images/img_4.jpg" width="700" height="560" loading="lazy" alt="about banner"
+                            class="w-100 banner-animation">
                     </figure>
 
                     <div class="about-content">
@@ -204,7 +220,7 @@
                     <h2 class="h2 section-title underline">Our Services</h2>
 
                     <ul class="service-list">
-                        
+
                         <li>
                             <div class="service-card">
 
@@ -224,7 +240,7 @@
 
                             </div>
                         </li>
-                        
+
 
                         <li>
                             <div class="service-card">
@@ -267,7 +283,7 @@
                             </div>
                         </li>
 
-                           
+
                         <li>
                             <div class="service-card">
 
@@ -287,7 +303,7 @@
 
                             </div>
                         </li>
-                        
+
                         <li>
                             <div class="service-card">
 
@@ -309,7 +325,7 @@
                             </div>
                         </li>
 
-                         
+
                         <li>
                             <div class="service-card">
 
@@ -329,7 +345,7 @@
 
                             </div>
                         </li>
-                       
+
 
                     </ul>
 
@@ -715,10 +731,10 @@
                         <div class="pricing_details">
                             <h2 class="h2 section-title underline">Flexible Pricing Plans</h2>
                         </div>
-    
+
                         <div class="pricing_grid">
-    
-    
+
+
                             <div class="pricing_box freemium">
                                 <div class="pricing_title">Basic</div>
                                 <div class="price">
@@ -735,7 +751,7 @@
                                 <button class="btn pricing_button">Choose Plane <ion-icon name="chevron-forward-outline"
                                         aria-hidden="true"></ion-icon></button>
                             </div>
-    
+
                             <div class="pricing_box pro">
                                 <div class="pricing_title">Pro</div>
                                 <div class="price">
@@ -752,7 +768,7 @@
                                 <button class="btn pricing_button">Choose Plane <ion-icon name="chevron-forward-outline"
                                         aria-hidden="true"></ion-icon></button>
                             </div>
-    
+
                             <div class="pricing_box advanced">
                                 <div class="pricing_title">Advanced</div>
                                 <div class="price">
@@ -769,8 +785,8 @@
                                 <button class="btn pricing_button">Choose Plane <ion-icon name="chevron-forward-outline"
                                         aria-hidden="true"></ion-icon></button>
                             </div>
-    
-    
+
+
                         </div>
                     </div>
                 </div>
@@ -778,7 +794,7 @@
 
 
 
-             <!-- 
+            <!-- 
         - #TESTIMONIAL
       -->
             <section class="testimonial_wrapper">
@@ -791,136 +807,142 @@
                     <div class="wrapper">
 
                         <div class="testimonial_box">
-                          <!-- <i class="fas fa-quote-left quote"></i> -->
-                          <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu.</p>
-                          <div class="content">
-                            <div class="info">
-                              <div class="name">Alex Smith</div>
-                              <div class="job">WEB Designer</div>
-                              <div class="stars">
-                                  <ion-icon name="star"></ion-icon>
-                                  <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-half"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                              </div>
+                            <!-- <i class="fas fa-quote-left quote"></i> -->
+                            <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita
+                                reiciendis itaque placeat thuratu.</p>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="name">Alex Smith</div>
+                                    <div class="job">WEB Designer</div>
+                                    <div class="stars">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./assets/images/profile-1.jpg" alt="">
+                                </div>
                             </div>
-                            <div class="image">
-                              <img src="./assets/images/profile-1.jpg" alt="">
-                            </div>
-                          </div>
                         </div>
 
                         <div class="testimonial_box">
-                          <!-- <i class="fas fa-quote-left quote"></i> -->
-                          <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu.</p>
-                          <div class="content">
-                            <div class="info">
-                              <div class="name">Steven Chris</div>
-                              <div class="job">WEB Developer</div>
-                              <div class="stars">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                              </div>
+                            <!-- <i class="fas fa-quote-left quote"></i> -->
+                            <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita
+                                reiciendis itaque placeat thuratu.</p>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="name">Steven Chris</div>
+                                    <div class="job">WEB Developer</div>
+                                    <div class="stars">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./assets/images/profile-2.jpg" alt="">
+                                </div>
                             </div>
-                            <div class="image">
-                              <img src="./assets/images/profile-2.jpg" alt="">
-                            </div>
-                          </div>
                         </div>
 
-                        <div class="testimonial_box">
-                          <!-- <i class="fas fa-quote-left  quote"></i> -->
-                          <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu.</p>
-                          <div class="content">
-                            <div class="info">
-                              <div class="name">Kristina Bellis</div>
-                              <div class="job">General Manager</div>
-                              <div class="stars">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-half"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                                
-                              </div>
-                            </div>
-                            <div class="image">
-                              <img src="./assets/images/profile-3.jpg" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="testimonial_box">
-                          <!-- <i class="fas fa-quote-left  quote"></i> -->
-                          <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu.</p>
-                          <div class="content">
-                            <div class="info">
-                              <div class="name">Kristina Bellis</div>
-                              <div class="job">General Manager</div>
-                              <div class="stars">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-half"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                                
-                              </div>
-                            </div>
-                            <div class="image">
-                              <img src="./assets/images/profile-3.jpg" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        
                         <div class="testimonial_box">
                             <!-- <i class="fas fa-quote-left  quote"></i> -->
-                            <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu.</p>
+                            <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita
+                                reiciendis itaque placeat thuratu.</p>
                             <div class="content">
-                              <div class="info">
-                                <div class="name">Kristina Bellis</div>
-                                <div class="job">Web Designer</div>
-                                <div class="stars">
-                                  <ion-icon name="star"></ion-icon>
-                                  <ion-icon name="star"></ion-icon>
-                                  <ion-icon name="star-half"></ion-icon>
-                                  <ion-icon name="star-outline"></ion-icon>
-                                  <ion-icon name="star-outline"></ion-icon>  
-                                </div>
-                              </div>
-                              <div class="image">
-                                <img src="./assets/images/profile-1.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
+                                <div class="info">
+                                    <div class="name">Kristina Bellis</div>
+                                    <div class="job">General Manager</div>
+                                    <div class="stars">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
 
-                        <div class="testimonial_box">
-                          <!-- <i class="fas fa-quote-left  quote"></i> -->
-                          <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu.</p>
-                          <div class="content">
-                            <div class="info">
-                              <div class="name">Kristina Bellis</div>
-                              <div class="job">General Manager</div>
-                              <div class="stars">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                                
-                              </div>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./assets/images/profile-3.jpg" alt="">
+                                </div>
                             </div>
-                            <div class="image">
-                              <img src="./assets/images/profile-2.jpg" alt="">
-                            </div>
-                          </div>
                         </div>
 
-                      </div>
+                        <div class="testimonial_box">
+                            <!-- <i class="fas fa-quote-left  quote"></i> -->
+                            <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita
+                                reiciendis itaque placeat thuratu.</p>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="name">Kristina Bellis</div>
+                                    <div class="job">General Manager</div>
+                                    <div class="stars">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./assets/images/profile-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="testimonial_box">
+                            <!-- <i class="fas fa-quote-left  quote"></i> -->
+                            <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita
+                                reiciendis itaque placeat thuratu.</p>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="name">Kristina Bellis</div>
+                                    <div class="job">Web Designer</div>
+                                    <div class="stars">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./assets/images/profile-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial_box">
+                            <!-- <i class="fas fa-quote-left  quote"></i> -->
+                            <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita
+                                reiciendis itaque placeat thuratu.</p>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="name">Kristina Bellis</div>
+                                    <div class="job">General Manager</div>
+                                    <div class="stars">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./assets/images/profile-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
@@ -1110,7 +1132,7 @@
                     </li>
 
                     <li>
-                        <a href="#about" class="footer-link">About Us</a>
+                        <a href="#about" class="footer-link">About</a>
                     </li>
 
                     <li>
@@ -1122,7 +1144,7 @@
                     </li>
 
                     <li>
-                        <a href="#contact" class="footer-link">Contact</a>
+                        <a href="#pricing" class="footer-link">Pricing</a>
                     </li>
 
                     <!-- <li>
@@ -1138,7 +1160,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">Strategy & Research</a>
+                        <a href="#" class="footer-link">WP Development</a>
                     </li>
 
                     <li>
@@ -1146,15 +1168,19 @@
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">Web Solution</a>
+                        <a href="#" class="footer-link">Social Media Marketing</a>
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">Digital Marketing</a>
+                        <a href="#" class="footer-link">Website Maintenance</a>
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">App Design</a>
+                        <a href="#" class="footer-link">SEO Optimization</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Content Marketing</a>
                     </li>
 
                 </ul>
@@ -1213,8 +1239,8 @@
                         </div>
 
                         <div>
-                            <a href="mailto:info@desinic.com" class="footer-item-link">info@desinic.com</a>
-                            <a href="mailto:help@desinic.com" class="footer-item-link">help@desinic.com</a>
+                            <a href="mailto:info@example.com" class="footer-item-link">info@example.com</a>
+                            <a href="mailto:help@example.com" class="footer-item-link">help@example.com</a>
                         </div>
 
                     </li>
@@ -1226,7 +1252,7 @@
                         </div>
 
                         <address class="footer-item-link">
-                            Pontiac, Michigan, United States of America
+                            Plot no 420, Hairan gali Paresaan road, Ghanchakkar nagar.
                         </address>
 
                     </li>
@@ -1265,6 +1291,11 @@
       -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- js bootstrap link -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
 </body>
 

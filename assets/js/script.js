@@ -1,5 +1,30 @@
 'use strict';
 
+// POPUP---HOME
+
+function createPopup(id) {
+  let popupBox = document.querySelector(id);
+  let overlayy = document.querySelector(".overlayy");
+  let closeBtn = document.querySelector(".close-btn");
+
+  function openPopup() {
+    popupBox.classList.add("active");
+  }
+  function closePopup() {
+    popupBox.classList.remove("active");
+  }
+
+  overlayy.addEventListener("click", closePopup);
+  closeBtn.addEventListener("click", closePopup);
+  return openPopup;
+
+}
+
+  let popup = createPopup("#popup");
+  document.querySelector("#open-popup").addEventListener("click", popup);
+
+
+
 /**
  * navbar toggle
  */
