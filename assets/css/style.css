@@ -316,12 +316,12 @@ body {
 }
 
 .nav-open-btn {
-  /* color: var(--color); */
-  color: #000000;
-  font-size: 25px;
-  padding: 10px;
+  color: var(--color);
+  /* color: #000000; */
+  font-size: 35px;
+  /* padding: 10px;
   background-color: rgb(226, 230, 251);
-  border-radius: 50px;
+  border-radius: 50px; */
 }
 
 .navbar {
@@ -471,7 +471,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(1.15);
   width: 95%;
-  max-width: 350px;
+  max-width: 450px;
   background-color: #fff;
   padding: 25px;
   border-radius: 20px;
@@ -492,6 +492,56 @@ body {
   color: #222;
   font-size: 16px;
   text-align: center;
+}
+
+.popup_call_email{
+  align-items: center;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.click_to_call{
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  margin: 10px 0 14px 12px;
+}
+
+.click_to_call ion-icon{
+  font-size: 15px;
+  display:inline-flex;
+  vertical-align: middle;
+  color: #eee;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  background-color: #2234ae;
+  background-image: linear-gradient(90deg, #031378 0, #21319d 51%, #6475e4);
+}
+.click_to_call:hover{
+  color: #081c9e;
+}
+
+.click_to_email{
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  margin: 10px 0 0 12px;
+}
+.click_to_email:hover{
+  color: #081c9e;
+}
+
+.click_to_email ion-icon{
+  font-size: 15px;
+  vertical-align: middle;
+  display: inline-flex;
+  color: #eee;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  background-color: #2234ae;
+  background-image: linear-gradient(90deg, #031378 0, #21319d 51%, #6475e4);
 }
 
 .popup .popup_content .controls{
@@ -852,9 +902,11 @@ body {
 .pricing-table .pricing_grid .pricing_box.pro{
   /* transform: scale(1.1); */
   background-image: linear-gradient(120deg, #9eaafb 0, #071464 51%, #050d42);
+  transition: all .3s ease;
 }
 
 .pricing-table .pricing_grid .pricing_box.pro:hover{
+  /* background-image: linear-gradient(30deg, #9eaafb 0, #071464 51%, #050d42); */
   transform: translateY(-15px);
 }
 
