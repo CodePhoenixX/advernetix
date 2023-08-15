@@ -73,9 +73,9 @@
                         <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
                     </li> -->
 
-                    <li class="navbar-item">
+                    <!-- <li class="navbar-item">
                         <a href="#pricing" class="navbar-link" data-navbar-link>Pricing</a>
-                    </li>
+                    </li> -->
 
                     <!-- <li class="navbar-item">
                         <a href="#contact" class="navbar-link" data-navbar-link>Contact Us</a>
@@ -166,10 +166,13 @@
           -->
 
             <section class="section about" id="about">
-                <div class="container">
+                <div class="container">     
 
                     <figure class="about-banner">
-                        <img src="./assets/images/img_4.jpg" width="700" height="560" loading="lazy" alt="about banner"
+
+                        <!-- default width 700 and height 560 -->
+
+                        <img src="./assets/images/about.png" width="850" height="660" loading="lazy" alt="about banner"
                             class="w-100 banner-animation">
                     </figure>
 
@@ -732,7 +735,7 @@
                 - #PRICING
             -->
 
-            <section class="pricing" id="pricing">
+            <!-- <section class="pricing" id="pricing">
                 <div class="container">
                     <div class="pricing-table">
                         <div class="pricing_details">
@@ -797,7 +800,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
 
 
@@ -808,7 +811,7 @@
                 <div class="container">
 
                     <div class="testimonial_heading">
-                        <h2 class="h2 section-title underline">Testimonial</h2>
+                        <h2 class="h2 section-title underline">Team Members</h2>
                     </div>
 
                     <div class="wrapper">
@@ -980,22 +983,22 @@
             <form action="" class="contact-form">
 
                 <div class="input-wrapper">
-                    <input type="text" name="name" aria-label="name" placeholder="Your name*" required
+                    <input type="text" name="name" aria-label="name" title="Enter Your Name" placeholder="Your name*" required
                         class="input-field" autocomplete="off">
 
-                    <input type="email" name="email_address" aria-label="email" placeholder="Email address*" required
+                    <input type="email" name="email_address" aria-label="email" title="Enter Your Email" placeholder="Email address*" required
                         class="input-field" autocomplete="off">
                 </div>
 
                 <div class="input-wrapper">
-                    <input type="text" name="subject" aria-label="subject" placeholder="Subject" class="input-field"
+                    <input type="text" name="subject" aria-label="subject" title="Subject of Email" placeholder="Subject" class="input-field"
                         autocomplete="off">
 
-                    <input type="number" name="phone" aria-label="phone" placeholder="Phone number" class="input-field"
+                    <input type="number" name="phone" aria-label="phone" title="Enter Your Phone Number" placeholder="Phone number" class="input-field"
                         autocomplete="off">
                 </div>
 
-                <textarea name="message" aria-label="message" placeholder="Your message...*" required
+                <textarea name="message" aria-label="message" title="Enter Your Message" placeholder="Your message...*" required
                     class="input-field" autocomplete="off"></textarea>
 
                 <div class="checkbox-wrapper">
@@ -1008,7 +1011,7 @@
                     </label>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-primary">Send Message <ion-icon name="chevron-forward-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon></button>
 
             </form>
 
@@ -1045,8 +1048,8 @@
                             <h3 class="h3 card-title">Visit Here</h3>
 
                             <address class="card-address">
-                                Plot no 420, Hairan gali Paresaan <br>
-                                road, Ghanchakkar nagar.
+                                Contrary to popular belief, Lorem <br> 
+                                is not simply random text.
                             </address>
 
                         </div>
@@ -1258,8 +1261,8 @@
                             <ion-icon name="location"></ion-icon>
                         </div>
 
-                        <address class="footer-item-link">
-                            Plot no 420, Hairan gali Paresaan road, Ghanchakkar nagar.
+                        <address class="footer-item-link footer-item-link-color">
+                            Contrary to popular belief, Lorem is not simply random text.
                         </address>
 
                     </li>
