@@ -1169,6 +1169,7 @@ textarea.input-field {
 .contact-card :is(.card-link, .card-address) {
   font-size: 15px;
   transition: var(--transition-2);
+  color: hsla(0, 0%, 0%, 0.7);
 }
 
 .contact-card .card-link:is(:hover, :focus) {
