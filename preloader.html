@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader</title>
+
+    <!-- JQUERY CDN -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .preloader_1 {
+            z-index: 1000;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f44e5c;
+        }
+
+        #logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fill 3s ease forwards 2s;
+        }
+
+        #logo path:nth-child(1) {
+            stroke-dasharray: 493px;
+            stroke-dashoffset: 493px;
+            animation: line-animation 2s ease forwards;
+        }
+
+        #logo path:nth-child(2) {
+            stroke-dasharray: 540px;
+            stroke-dashoffset: 540px;
+            animation: line-animation 2s ease forwards 0.2s;
+        }
+
+        #logo path:nth-child(3) {
+            stroke-dasharray: 478px;
+            stroke-dashoffset: 478px;
+            animation: line-animation 2s ease forwards 0.4s;
+        }
+
+        #logo path:nth-child(4) {
+            stroke-dasharray: 486px;
+            stroke-dashoffset: 486px;
+            animation: line-animation 2s ease forwards 0.6s;
+        }
+
+        #logo path:nth-child(5) {
+            stroke-dasharray: 543px;
+            stroke-dashoffset: 543px;
+            animation: line-animation 2s ease forwards 0.8s;
+        }
+
+        #logo path:nth-child(6) {
+            stroke-dasharray: 599px;
+            stroke-dashoffset: 599px;
+            animation: line-animation 2s ease forwards 1.0s;
+        }
+
+        #logo path:nth-child(7) {
+            stroke-dasharray: 486px;
+            stroke-dashoffset: 486px;
+            animation: line-animation 2s ease forwards 1.2s;
+        }
+
+        #logo path:nth-child(8) {
+            stroke-dasharray: 373px;
+            stroke-dashoffset: 373px;
+            animation: line-animation 2s ease forwards 1.4s;
+        }
+
+        #logo path:nth-child(9) {
+            stroke-dasharray: 261px;
+            stroke-dashoffset: 261px;
+            animation: line-animation 2s ease forwards 1.6s;
+        }
+
+        #logo path:nth-child(10) {
+            stroke-dasharray: 520px;
+            stroke-dashoffset: 520px;
+            animation: line-animation 2s ease forwards 1.8s;
+        }
+
+        @keyframes line-animation {
+            to {
+                stroke-dashoffset: 0;
+                opacity: 0;
+            }
+        }
+
+        @keyframes fill {
+            from {
+                fill: transparent;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="preloader_1">
+        <svg id="logo" width="1021" height="116" viewBox="0 0 1021 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <path
+                d="M79.85 92.4H40.55L34.25 111H7.39999L45.5 5.7H75.2L113.3 111H86.15L79.85 92.4ZM73.25 72.6L60.2 34.05L47.3 72.6H73.25Z"
+                stroke="white" stroke-width="5" mask="url(#path-1-outside-1_55_18)" />
+            <path
+                d="M171.846 5.7C182.946 5.7 192.646 7.9 200.946 12.3C209.246 16.7 215.646 22.9 220.146 30.9C224.746 38.8 227.046 47.95 227.046 58.35C227.046 68.65 224.746 77.8 220.146 85.8C215.646 93.8 209.196 100 200.796 104.4C192.496 108.8 182.846 111 171.846 111H132.396V5.7H171.846ZM170.196 88.8C179.896 88.8 187.446 86.15 192.846 80.85C198.246 75.55 200.946 68.05 200.946 58.35C200.946 48.65 198.246 41.1 192.846 35.7C187.446 30.3 179.896 27.6 170.196 27.6H158.046V88.8H170.196Z"
+                stroke="white" stroke-width="5" mask="url(#path-1-outside-1_55_18)" />
+            <path d="M347.73 5.7L310.38 111H278.28L240.93 5.7H268.23L294.33 85.2L320.58 5.7H347.73Z" stroke="white"
+                stroke-width="5" mask="url(#path-1-outside-1_55_18)" />
+            <path d="M391.6 26.25V47.55H425.95V67.35H391.6V90.45H430.45V111H365.95V5.7H430.45V26.25H391.6Z"
+                stroke="white" stroke-width="5" mask="url(#path-1-outside-1_55_18)" />
+            <path
+                d="M508.303 111L486.403 71.25H480.253V111H454.603V5.7H497.653C505.953 5.7 513.003 7.15 518.803 10.05C524.703 12.95 529.103 16.95 532.003 22.05C534.903 27.05 536.353 32.65 536.353 38.85C536.353 45.85 534.353 52.1 530.353 57.6C526.453 63.1 520.653 67 512.953 69.3L537.253 111H508.303ZM480.253 53.1H496.153C500.853 53.1 504.353 51.95 506.653 49.65C509.053 47.35 510.253 44.1 510.253 39.9C510.253 35.9 509.053 32.75 506.653 30.45C504.353 28.15 500.853 27 496.153 27H480.253V53.1Z"
+                stroke="white" stroke-width="5" mask="url(#path-1-outside-1_55_18)" />
+            <path d="M654.154 111H628.504L585.604 46.05V111H559.954V5.7H585.604L628.504 70.95V5.7H654.154V111Z"
+                stroke="white" stroke-width="5" mask="url(#path-1-outside-1_55_18)" />
+            <path d="M705.897 26.25V47.55H740.247V67.35H705.897V90.45H744.747V111H680.247V5.7H744.747V26.25H705.897Z"
+                stroke="white" stroke-width="5" mask="url(#path-1-outside-1_55_18)" />
+            <path d="M844.65 5.7V26.25H816.75V111H791.1V26.25H763.2V5.7H844.65Z" stroke="white" stroke-width="5"
+                mask="url(#path-1-outside-1_55_18)" />
+            <path d="M890.673 5.7V111H865.023V5.7H890.673Z" stroke="white" stroke-width="5"
+                mask="url(#path-1-outside-1_55_18)" />
+            <path
+                d="M981.261 111L959.811 78.75L940.911 111H911.811L945.561 57.45L911.061 5.7H940.911L962.061 37.5L980.661 5.7H1009.76L976.311 58.8L1011.11 111H981.261Z"
+                stroke="white" stroke-width="5" mask="url(#path-1-outside-1_55_18)" />
+        </svg>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-FmrxaqOldbQJq7ruBRLrIzxYZxDJLH2GBKvJqJz8Jf7WKEgDkvAkfta6JeInBYExpr+R0aw8niow9OiunjDigQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        $(window).on("load", function () {
+            $(".preloader").delay(3500).fadeOut(200);
+        })
+
+    </script>
+</body>
+
+</html>

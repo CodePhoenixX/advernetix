@@ -20,8 +20,8 @@ function createPopup(id) {
 
 }
 
-  let popup = createPopup("#popup");
-  document.querySelector("#open-popup").addEventListener("click", popup);
+let popup = createPopup("#popup");
+document.querySelector("#open-popup").addEventListener("click", popup);
 
 
 
@@ -77,3 +77,9 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("active");
   }
 });
+
+// PRELOADER FADEOUT ANIMATION
+$(window).on("load", function(){
+  $(".preloader").delay( 3500 ).fadeOut(200); 
+})
+
